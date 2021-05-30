@@ -1,0 +1,44 @@
+<html>
+    
+    <body>
+        <h3>Selamat Datang di Jember Program</h3>
+        <h4>Kalkulator Sederhana</h4>
+        <br><br>
+        <label for="">Angka 1</label>
+        <input type="text" id="angka1">
+        <br>
+        <br>
+        <label for="">Angka 2</label>
+        <input type="text" id="angka2">
+        <br>
+        <br>
+        <label for="">Hasil</label>
+        <input type="text" id="hasil">
+        <br>
+        <br>
+        
+        <button onclick="ftambah()">Tambah (+)</button>
+        <button onclick="fkurang()">Kurang (-)</button>
+        
+        <script>
+            var angka1 =document.getElementById("angka1");
+            var angka2 =document.getElementById("angka2");
+            var hasil =document.getElementById("hasil");
+        
+        
+            // angka1.value = 100;
+            // angka2.value = 300;
+        
+            function ftambah(){
+                hasil.value = Number(angka1.value) + Number(angka2.value);
+            }
+            
+            function fkurang(){
+                hasil.value = Number(angka1.value) - Number(angka2.value);
+            }
+        
+        </script>
+        
+    </body>
+    
+</html>
